@@ -74,7 +74,7 @@ a:hover {
 }
 
 #footer {
-    position: absolute;
+    position: relative;
 	height: 50px;
 	background-color: #668284;
 	clear: both;
@@ -85,5 +85,5 @@ a:hover {
 }
 
 #footer p {
-	position: fixed;
+	position: relative;
 }
