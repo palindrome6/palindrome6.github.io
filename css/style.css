@@ -77,6 +77,16 @@ header p {
   top: 360px;
 }
 
+header a {
+  color: #fff;
+  font-size: 1.1em;
+  padding-bottom: 1.3em;
+  padding-top: .5em;
+  opacity: .9;
+  position: relative;
+  top: 360px;
+}
+
 section h1 {
   font-size: 1.8em;
   line-height: 1em;
