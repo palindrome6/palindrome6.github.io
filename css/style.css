@@ -72,7 +72,7 @@ header p {
   font-size: 1.1em;
   padding-bottom: 1.3em;
   padding-top: .5em;
-  opacity: .9;
+  opacity: 1;
   position: relative;
   top: 360px;
 }
