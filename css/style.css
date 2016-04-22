@@ -42,7 +42,6 @@ hr {
 }
 
 header {
-  background-color: #999;
   background-image: url("/images/stratum.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -278,6 +277,7 @@ footer hr {
 }
 
 .spotlight img {
+  width: 60%;
   width: 60%;
   max-width: 250px;
   margin-left: auto;
