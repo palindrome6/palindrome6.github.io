@@ -18,8 +18,11 @@
 		<img class="lazy" src="/images/stratum.jpg" alt="stratum"  width="1400" heigh="600">
 		<script>
 		$(function() {
-    		$("img.lazy").lazyload();
+    		$("img.lazy").lazyload({
+    			threshold : 200
+			});
 		});
+
 		</script>
 		<noscript>
     		<img src="/images/stratum.jpg" width="1400" heigh="600">
