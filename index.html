@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<script src="/jquery/jquery.js"></script>
+<script src="/jquery/jquery.lazyload.js"></script>
 	<head>
 		<title>Nitin Narayan</title>
 		<!-- link to main stylesheet -->
@@ -13,7 +15,11 @@
         		<li><a href="/cv">CV</a></li>
     		</ul>
 		</nav>
-		<img src="/images/stratum.jpg" alt="stratum" style="width:1400px;height:600px;">
+		<img class="lazy" src="/images/stratum.jpg" alt="stratum"  width="1400" heigh="600">
+		<noscript>
+    		<img src="/images/stratum.jpg" width="1400" heigh="600">
+		</noscript>
+		<!-- <img src="/images/stratum.jpg" alt="stratum" style="width:1400px;height:600px;"> -->
 		<div class="container">
     		<div class="blurb">
         		<h1>Hi there, I'm Nitin Narayan!</h1>
