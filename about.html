@@ -56,12 +56,32 @@
 		<section class="gallery">
 			<h1 class="center">Gallery</h1>
 			<div class="row">
-				<a href="#"><img src="images/ams3.jpg" class="grid-2"></a>
-				<a href="#"><img src="images/stratum.jpg" class="grid-2"></a>
-				<a href="#"><img src="images/psv.jpg" class="grid-2"></a>
-				<a href="#"><img src="images/dus.jpg" class="grid-2"></a>
-				<a href="#"><img src="images/graf.jpg" class="grid-2"></a>
-				<a href="#"><img src="images/iam.jpg" class="grid-2"></a>
+				<a href="#"><img class="lazy" src="images/ams3.jpg" class="grid-2"></a>
+				<script>
+					$(function() {
+    					$("img.lazy").lazyload({
+    					threshold : 200
+					});
+				});
+				</script>
+				<noscript>
+    				<img src="images/ams3.jpg">
+				</noscript>	
+				<a href="#"><img class="lazy" src="images/stratum.jpg" class="grid-2"></a>
+				<script>
+					$(function() {
+    					$("img.lazy").lazyload({
+    					threshold : 200
+					});
+				});
+				</script>
+				<noscript>
+    				<img src="images/stratum.jpg">
+				</noscript>					
+				<a href="#"><img class="lazy" src="images/psv.jpg" class="grid-2"></a>
+				<a href="#"><img class="lazy" src="images/dus.jpg" class="grid-2"></a>
+				<a href="#"><img class="lazy" src="images/graf.jpg" class="grid-2"></a>
+				<a href="#"><img class="lazy" src="images/iam.jpg" class="grid-2"></a>
 			</div>
 		</section>
 		
