@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="/jquery/jquery.js"></script>
+<script src="/jquery/jquery.lazyload.js"></script>
 <head>
 	<meta charset="utf-8" />
 	<title>About</title>
@@ -19,7 +21,18 @@
 <body>
 	
 	<!-- Header-->
-	<header>
+	<header background="/images/graf.jpg">
+		<img class="lazy" src="/images/graf.jpg">
+		<script>
+			$(function() {
+    			$("img.lazy").lazyload({
+    				threshold : 200
+				});
+			});
+		</script>
+		<noscript>
+    		<img src="/images/graf.jpg">
+		</noscript>	
 		<h1>Nitin Narayan</h1>
 		<p>Master's student in Computer Science and Engineering at Eindhoven University of Technology</p>
 
