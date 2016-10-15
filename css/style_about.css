@@ -2,6 +2,13 @@ html
 {
     margin: 0;
     padding: 0;
+    height: 100;
+    width: 100;
+    margin-left: -10px;
+    margin-right:-20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: black;
 }
 
 
@@ -14,28 +21,58 @@ html
 footer {
   background-color: black;
   padding: 0px;
-}
-
-.main-content p {
-  text-align: center;
-  margin-top: 0px;
-  margin-left: 20px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: white;
-  font-size: 14px;
-
-
-}
-.main-content .row{
+   width: 100%;
+  height: 100%;
   background-color: black;
 }
-.main-content .row .col-sm-9{
 
-  background: url(/images/wordchart2.png) no-repeat left top;
-  background-size: cover;
-  height: 740px;
-  border: 5px solid black;
+.main-content{
+  width: 100%;
+  height: 100%;
+  margin-left:-20px;
+  margin-right:-20px;
+  background-color: black;
+  color: black;
+  padding-right: 40px; 
+
+}
+
+.main-content .row{
+  width: 100%;
+  height: 100%; 
+  background-color: black;
+}
+.main-content .row .col-sm-9 .span4{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+
+}
+.main-content .row .col-sm-9 .span4 p{
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  position: contain;
+  color: white;
+  font-size: 13px;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 90%;
+  border: 5px #D3D3D3;
   border-radius: 50px;
+  background-color: black;
+
+}
+.main-content .row .col-sm-9 .span8{
+
+  background: url(/images/wordchart2.png) no-repeat;
+  background-size: 100% 100%;
+  height: 815px;
+  width: 1100px;
+  margin-left: 120px;
+  border: 5px #D3D3D3;
+  border-radius: 50px;
+  background-color: black;
 
 }
 
@@ -43,17 +80,15 @@ footer {
 
   background: url(/images/nitin1.jpg) no-repeat left top;
   background-size: cover;
-  height: 740px;
-  border: 5px solid black;
+  height: 900px;
+  border: 5px #D3D3D3;
   border-radius: 50px;
-
-
-
+  background-color: black;
 }
-.main-content .row{
+/*.main-content .row{
   width: 1500px;
   height: 759px;
   color: black;
   background-color: black;
-}
+}*/
 

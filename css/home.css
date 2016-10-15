@@ -2,27 +2,29 @@ html
 {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .jumbotron
 {	background-color: black;
 	margin-top: -48px;
 	margin-bottom: -40px;
+
+	
 }
 
 .bg-image
-{	
-	top:-10px;
-	height: 760px;
+{	top:-10px;
+    height: 900px;
 	background-image: url('/images/stratum.jpg');
-	background-size: 100% 100%; 
+	background-size: 100% 100%;
 	opacity: 0.8;
-
+	overflow: hidden;
 }
 
 .container
 { 
-  top: 580px;	
+  top: 700px;    
   position: absolute;
   width: 100%;
   font-family: "Georgia";
