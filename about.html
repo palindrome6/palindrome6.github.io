@@ -1,202 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="/jquery/jquery.js"></script>
-<script src="/jquery/jquery.lazyload.js"></script>
 <head>
-	<meta charset="utf-8" />
-	<title>About</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css--> 
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
-	<!-- stylesheets -->
-	<link rel="stylesheet" href="/css/style.css" type="text/css" />
-	<!-- favicon -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-	
-	<!-- just in case viewer is using Internet Explorer -->
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <script src="/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style_about.css">
+  <script src="/js/bootstrap.min.js"></script>
+  <link href='/css/fonts.css' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-	
-	<!-- Header-->
-	<header>
-		<!-- <img class="lazy" src="/images/graf.jpg"> -->
-		<script>
-			$(function() {
-    			$("header.background-image").lazyload({
-    				threshold : 400
-				});
-			});
-		</script>
-		<noscript>
-    		<img src="/images/graf.jpg">
-		</noscript>	
-		<h1>Nitin Narayan</h1>
-		<p>Master's student in Computer Science and Engineering at Eindhoven University of Technology</p>
 
-	</header>
-	
-	<div class="container">
-		
-		<!-- Introduction-->
-		<section class="center">
-			<h1>Welcome!</h1>
-			<p>
-				In this information age, novel web apps are developed every day and there is a need to design intelligent and reliable web-based systems. I am a Master's student at TU/e specializing in Web Science and I am interested in the principles behind the powerful technologies that drive the web. My aim is to delve beyond the full stack by integrating data,visualizations and machine learning to develop ultra-modern web apps and products.
-				My areas of interests are Web development, Data visualization and Machine Learning.
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">About</a></li>
+        <li><a href="horizontal_timeline.html">Education</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+<!--
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+//-->
+    </div>
+  </div>
+</nav>
 
-			</p>
-		</section>
-		
-		<hr>
-		
-		<!-- Gallery Block-->
-		<section class="gallery">
-			<h1 class="center">Gallery</h1>
-			<div class="row">
-				<a href="#"><img class="grid-2" src="images/ams3.jpg"></a>
-				<a href="#"><img class="grid-2" src="images/stratum.jpg"></a>				
-				<a href="#"><img class="grid-2" src="images/psv.jpg"></a>
-				<a href="#"><img class="grid-2" src="images/dus.jpg"></a>
-				<a href="#"><img class="grid-2" src="images/graf.jpg"></a>
-				<a href="#"><img class="grid-2" src="images/iam.jpg"></a>
-			</div>
-		</section>
-		
-		<hr>
-		
-		<!-- Testimonials-->	
-<!-- 		<section class="testimonial">
-			<div class="row">
-				<div class="grid-2">
-					<img src="img/re.png">
-					<h2>Their Name</h2>
-					<p>You can use this as a place to put recommendations, accolades and testimonials</p>
-				</div>
-				
-				<div class="grid-2">
-					<img src="img/re.png">
-					<h2>Their Name</h2>
-					<p>You can use this as a place to put recommendations, accolades and testimonials</p>
-				</div>
-		
-				<div class="grid-2">
-					<img src="img/re.png">
-					<h2>Their Name</h2>
-					<p>You can use this as a place to put recommendations, accolades and testimonials</p>
-				</div>
-			</div>
-		</section> -->
-	</div> <!-- End container-->
-	
-	<!-- Spotlight -->
-	<section class="spotlight">
-		<div class="container">
-			<div class="row">
-				<div class="grid-3">
-					<img src="images/nitin.jpg">
-				</div>
-				<div class="grid-3">
-					<h1>Projects</h1>
-					<p>My areas of interests are Machine learning, Web development and Data visualization. Feel free to have a look at my projects. </p>
-					<a href="https://github.com/palindrome6">View Projects</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	<!-- New container-->
-	<div class="container">
-	
-		<section class="education">	
-			<h2>M.S in Computer Science and Engineering, Eindhoven University of technology (2015-2017)</h2>
-		</section>
-		
-		<hr>
-			
-		<!--Experience Tables-->
-		<section class="experience">
-			<div class="row">
-				<div class="grid-2">
-					<h2>Education</h2>
-				</div>
-				<div class="grid-4">
-					<ul>
-						<li>M.S in Computer Science and Engineering, Eindhoven University of technology (2015-2017)</li>
-						<li>B.E in Electronics and Communication Engineering, SSN College of Engineering (Anna University) (2011- 2015)</li>
-						<li>Padma Seshadri Bala Bhavan Senior Secondary School</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="grid-2">
-					<h2>Areas of interests</h2>
-				</div>
-				<div class="grid-4">
-					<ul>
-						<li>Machine learning, artificial intelligence</li>
-						<li>Web development</li>
-						<li>Data visualization</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="grid-2">
-					<h2>Other Interests</h2>
-				</div>
-				<div class="grid-4">
-					<ul>
-						<li>Arsenal FC, PSV Eindhoven</li>
-						<li>Psychedelic rock, Pink Floyd, One Republic</li>
-						<li>Futsal, biking, travel</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		
-		<hr>
-		
-		<section>
-			<!--List of skills-->
-			<div class="row">
-				<div class="grid-2">
-					<h1>Skills</h1>
-					<ul>
-						<li>Python</li>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Javascript</li>
-						<li>Java</li>
-						<li>Flask</li>
-						<li>Git</li>
-					</ul>
-				</div>
-				
-				<div class="grid-4">
-					<h1>What I'm looking for</h1>
-					<p>						
-						I am interested in machine learning and AI technologies and looking forward to working in dynamic environments to tackle real world problems.
-						You can reach me at 
-						<a href="mailto:nitinnarayan1993@gmail.com" target="_top">nitinnarayan1993@gmail.com</a> and add me on
-						<a href="https://in.linkedin.com/in/nitin-narayan-501425107">Linkedin</a>.
-					</p>
-				</div>
-			</div>
-		</section>
-		
-		
-		
-		<!--Footer-->
-		<footer class="center">
-			<hr>
-			<span>&copy; Nitin Narayan 2016</span>
-			<p><a href="http://palindrome6.github.io/">Home</a></p>
-		</footer>
-		
-	</div><!-- End Container -->
-	
+
+
+<div class="main-content">
+  <div class="row">
+
+    <div class="col-sm-9">
+      <p>In this information age, novel web apps are developed every day and there is a need to design intelligent and reliable web-based systems. I am a Master's student at TU/e specializing in Web Science and I am interested in the principles behind the powerful technologies that drive the web. My aim is to delve beyond the full stack by integrating data,visualizations and machine learning to develop ultra-modern web apps and products. My areas of interests are Web development, Data visualization and Machine Learning.</p>
+    </div>
+
+
+    <div class="col-sm-3">
+
+    </div>
+
+  </div>
+</div>
+
+<!-- <footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer> -->
+
 </body>
 </html>
+

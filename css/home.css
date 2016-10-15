@@ -1,0 +1,44 @@
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron
+{	background-color: black;
+	margin-top: -48px;
+	margin-bottom: -40px;
+}
+
+.bg-image
+{	
+	top:-10px;
+	height: 760px;
+	background-image: url('/images/stratum.jpg');
+	background-size: 100% 100%; 
+	opacity: 0.8;
+
+}
+
+.container
+{ 
+  top: 580px;	
+  position: absolute;
+  width: 100%;
+  font-family: "Georgia";
+}
+.container p
+{	
+	top: 180px;
+	color: white;
+
+}
+.container h1
+{	
+	top: 40px;
+	color: black;
+}
+
+head
+{	background-color: black;
+}
